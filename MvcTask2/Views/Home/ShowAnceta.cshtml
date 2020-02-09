@@ -1,0 +1,23 @@
+﻿@model IEnumerable<MvcTask1.Models.ViewModels.Profiles.ProfVM>
+@{
+    ViewBag.Title = "ShowAnceta";
+}
+   
+
+        @foreach (var item in Model)
+        {
+            <tr id="id_@item.Id" class="@item.Email">
+
+                <td>
+                    @Html.DisplayFor(modelItem => item.Name)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Surname)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Gender)
+                </td>
+            </tr>
+        }
+
+    

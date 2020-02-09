@@ -1,0 +1,19 @@
+﻿* {
+    margin: 0;
+}
+.main {
+    margin: 30px auto;
+    height: 1000px;
+    width: 100%;
+}
+.divcolor {
+    background-color: #DFE0E1;
+}
+.nav-masthead {
+    display: block;
+}
+
+.my-item {
+    padding: 10px;
+    margin: 50px auto;
+}

@@ -1,0 +1,26 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+
+
+    <div class="col-sm-8 my-item divcolor">
+        <div class="list-group">
+            @foreach (var b in ViewBag.Articles)
+            {
+
+                <button type="button" class="list-group-item list-group-item-action">
+                    <!--сделать отдельно заголовок текст и дату + сделать модель в энтитис и вывести через модель и энтити -->
+                    <p class="text-black-50">@b.Title - @b.Time</p> <text> @b.Slug</text>
+                </button>
+               
+            }
+        </div>
+    </div>
+
+<div class="col-2 my-item divcolor">
+
+    @Html.ActionLink("Главная", "Index", "Home", new { @class = "page-link" })
+    @Html.ActionLink("Гостевая", "Guest", "Home", new { @class = "page-link" })
+    @Html.ActionLink("Анкета", "Anceta", "Home", new { @class = "page-link" })
+</div>
